@@ -32,10 +32,10 @@ Usage:
 	<div class="col-md-3">
 		<div class="team-item">
 			<div class="team-image">
-				<img src="{{ BASE_PATH }}{{ post.img.url }}" class="img-responsive" alt="topic img">
+				<img src="{{ UPFILE_PATH }}{{ post.img.url }}" class="img-responsive" alt="topic img">
 			</div>
 			<div class="team-text">
-				<h3>{{ BASE_PATH }}{{ post.title }}</h3>
+				<h3>{{ post.title }}</h3>
 				<div class="team-location">{{ post.date | date: "%B %e, %Y" }}</div>
 				<p>{{ post.digest }}</p>
 			</div>
