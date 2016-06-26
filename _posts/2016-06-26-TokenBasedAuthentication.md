@@ -1,6 +1,6 @@
 ---
 img :
-  url : /upfile/20160626tokenbasedauthentication_jwtwork.png
+  url : 20160626tokenbasedauthentication_jwtwork.png
 title : 基于Token的认证和基于声明的标识
 digest : 基于Token的认证和基于声明的标识，JWT定义了一种在客户端和服务器之间轻便和独立的（compact and self-contained）传递信息的方法。
 ---
