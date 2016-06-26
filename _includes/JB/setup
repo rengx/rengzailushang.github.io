@@ -22,6 +22,9 @@
       {% else %}
       {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
       {% endif %}
-    {% endif %}  
+    {% endif %}
+    
+	  {% assign UPFILE_PATH = "/assets/upfile/" %}
+	
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
