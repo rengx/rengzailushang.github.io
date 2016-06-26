@@ -1,9 +1,9 @@
-#### »ùÓÚTokenµÄÈÏÖ¤ºÍ»ùÓÚÉùÃ÷µÄ±êÊ¶
+#### åŸºäºTokençš„è®¤è¯å’ŒåŸºäºå£°æ˜çš„æ ‡è¯†
 
 > http://codelife.me/blog/2014/03/26/token-based-authentication-and-claims-based-identity/
 
 #### JWT
-JWT¶¨ÒåÁËÒ»ÖÖÔÚ¿Í»§¶ËºÍ·şÎñÆ÷Ö®¼äÇá±ãºÍ¶ÀÁ¢µÄ£¨compact and self-contained£©´«µİĞÅÏ¢µÄ·½·¨¡£´«µİµÄĞÅÏ¢×öÁËÊı×ÖÇ©Ãû£¨HMAC»òÕßRSA£©£¬ÊÇ±»ÑéÖ¤ºÍ¿ÉĞÅµÄ¡£s
+JWTå®šä¹‰äº†ä¸€ç§åœ¨å®¢æˆ·ç«¯å’ŒæœåŠ¡å™¨ä¹‹é—´è½»ä¾¿å’Œç‹¬ç«‹çš„ï¼ˆcompact and self-containedï¼‰ä¼ é€’ä¿¡æ¯çš„æ–¹æ³•ã€‚ä¼ é€’çš„ä¿¡æ¯åšäº†æ•°å­—ç­¾åï¼ˆHMACæˆ–è€…RSAï¼‰ï¼Œæ˜¯è¢«éªŒè¯å’Œå¯ä¿¡çš„ã€‚s
 
 - **compact**: smaller size, can be sent through an URL, POST parameter, or inside an HTTP header.
 
@@ -17,18 +17,18 @@ alse sso
 ##### How do JWT work?
 ![](index_files/jwtwork.png)
 
-#### ¸÷Êã¼º¼û
+#### å„æŠ’å·±è§
 https://www.v2ex.com/t/148426
 
-#### Ï¸½ÚÊµÏÖ
+#### ç»†èŠ‚å®ç°
 
-##### tokenµÄ´æ´¢ºÍ´«µİ
-Èç¹ûaccess token ºÍ refreh token£¬Ó¦¸Ã´æ´¢ÔÚÄÄ£¬ÓÃ»§ÖĞĞÄ£¬»¹ÊÇÒµÎñÓ¦ÓÃ£¿
-´æ´¢ÔÚÒµÎñÓ¦ÓÃµÄ»°£¬ÇÖÈëĞÔÌ«Ç¿£»
+##### tokençš„å­˜å‚¨å’Œä¼ é€’
+å¦‚æœaccess token å’Œ refreh tokenï¼Œåº”è¯¥å­˜å‚¨åœ¨å“ªï¼Œç”¨æˆ·ä¸­å¿ƒï¼Œè¿˜æ˜¯ä¸šåŠ¡åº”ç”¨ï¼Ÿ
+å­˜å‚¨åœ¨ä¸šåŠ¡åº”ç”¨çš„è¯ï¼Œä¾µå…¥æ€§å¤ªå¼ºï¼›
 
-tokenÔÚÃ¿´ÎÇëÇóÖĞÊÇÈçºÎ´«µİµÄ£¬¿ÉÒÔÊÇhttp header£¬ÕâÑùµÄ»°Ê¹ÓÃrequestwrapºÍresponsewrap
+tokenåœ¨æ¯æ¬¡è¯·æ±‚ä¸­æ˜¯å¦‚ä½•ä¼ é€’çš„ï¼Œå¯ä»¥æ˜¯http headerï¼Œè¿™æ ·çš„è¯ä½¿ç”¨requestwrapå’Œresponsewrap
 
-##### tokenµÄÒ»¸öÊ¹ÓÃ½éÉÜ
+##### tokençš„ä¸€ä¸ªä½¿ç”¨ä»‹ç»
 http://www.haomou.net/2014/08/13/2014_web_token/
 
 ##### token benifits
