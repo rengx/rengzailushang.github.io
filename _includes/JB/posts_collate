@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 Collate_posts helper. Collated posts by year and month.
 Usage:
   1) assign the 'posts_collate' variable to a valid array of posts.
@@ -15,7 +16,8 @@ Usage:
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
         
--->{% endcomment %}
+-->
+{% endcomment %}
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
@@ -26,30 +28,21 @@ Usage:
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
   
-    {% if forloop.first %}
-      <h2>{{this_year}}</h2>
-      <h3>{{this_month}}</h3>
-      <ul>
-    {% endif %}
+	<!-- team member item -->
+	<div class="col-md-3">
+		<div class="team-item">
+			<div class="team-image">
+				<img src="{{ BASE_PATH }}{{ post.img.url }}" class="img-responsive" alt="topic img">
+			</div>
+			<div class="team-text">
+				<h3>{{ BASE_PATH }}{{ post.title }}</h3>
+				<div class="team-location">{{ post.date | date: "%B %e, %Y" }}</div>
+				<p>{{ post.digest }}</p>
+			</div>
+		</div>
+	</div>
+	<!-- end team member item -->
   
-    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  
-    {% if forloop.last %}
-      </ul>
-    {% else %}
-      {% if this_year != next_year %}
-        </ul>
-        <h2>{{next_year}}</h2>
-        <h3>{{next_month}}</h3>
-        <ul>
-      {% else %}    
-        {% if this_month != next_month %}
-          </ul>
-          <h3>{{next_month}}</h3>
-          <ul>
-        {% endif %}
-      {% endif %}
-    {% endif %}
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
