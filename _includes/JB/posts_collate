@@ -32,7 +32,7 @@ Usage:
 	<div class="col-md-3">
 		<div class="team-item">
 			<div class="team-image">
-				<img src="{{ UPFILE_PATH }}{{ post.img.url }}" class="img-responsive" alt="topic img">
+				<a href="{{ BASE_PATH }}{{ post.url }}"><img src="{{ UPFILE_PATH }}{{ post.img.url }}" class="img-responsive" alt="topic img"></a>
 			</div>
 			<div class="team-text">
 				<h3>{{ post.title }}</h3>
