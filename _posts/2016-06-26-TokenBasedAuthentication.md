@@ -1,4 +1,5 @@
 ---
+layout : content
 img :
   url : 20160626tokenbasedauthentication_jwtwork.png
 title : 基于Token的认证和基于声明的标识
