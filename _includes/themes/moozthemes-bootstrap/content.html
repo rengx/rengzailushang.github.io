@@ -16,6 +16,7 @@
 		<link href="{{ ASSET_PATH }}/css/owl.carousel.css" rel="stylesheet">
 		<link href="{{ ASSET_PATH }}/css/owl.theme.default.min.css"  rel="stylesheet">
 		<link href="{{ ASSET_PATH }}/css/style-list.css" rel="stylesheet">
+		<link href="{{ ASSET_PATH }}/css/github2.css" rel="stylesheet">
 		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 		<script src="{{ ASSET_PATH }}/js/ie-emulation-modes-warning.js"></script>
@@ -94,7 +95,7 @@
 					<div class="col-md-3">
 						<div class="team-item">
 							<div class="team-image">
-								<img src="images/demo/author-2.jpg" class="img-responsive" alt="author">
+								<img src="{{ ASSET_PATH }}/images/demo/author-2.jpg" class="img-responsive" alt="author">
 							</div>
 							<div class="team-text">
 								<h3>TOM BEKERS</h3>
@@ -114,9 +115,8 @@
 								<h3>{{page.title}}</h3>
 								<div class="team-location">{{ page.date | date_to_long_string }}</div>
 							</div>-->
-							<div class="team-image">
+							<div class="markdown-body">
 								{{content}}
-								<br />
 							</div>
 						</div>
 					</div>
