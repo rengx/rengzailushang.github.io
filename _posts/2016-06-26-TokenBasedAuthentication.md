@@ -23,7 +23,7 @@ alse sso
 - Information Exchange
 
 ##### How do JWT work?
-![](index_files/jwtwork.png)
+![](../../../assets/upfile/20160626tokenbasedauthentication_jwtwork.png)
 
 #### 各抒己见
 https://www.v2ex.com/t/148426
